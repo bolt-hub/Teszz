@@ -22,12 +22,8 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz
-    - run: pwd
-    - run: cd packages/myfirstapp/helloworld/
-    - run: npm ci
-    - run: cd
-    - run: pwd
-    - run: npm run ci:deploy
+   
+    - run: npm run deploy
 
     env:
       DEPLOYER_LOGIN_TOKEN: ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
