@@ -1,0 +1,7 @@
+bucket:
+  strip: 1
+
+packages:
+  - name: myfirstapp
+    actions:
+      - name: helloworld
