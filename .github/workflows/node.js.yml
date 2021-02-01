@@ -23,7 +23,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz
     - run: pwd
-    - run: nim project deploy
+    - run: nim project deploy Teszz
 
     env:
       DEPLOYER_LOGIN_TOKEN: ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
