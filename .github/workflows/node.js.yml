@@ -25,5 +25,3 @@ jobs:
     - run: nim auth login ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
     - run: nim project deploy .
 
-    env:
-      DEPLOYER_LOGIN_TOKEN: ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
