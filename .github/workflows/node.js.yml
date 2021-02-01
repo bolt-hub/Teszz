@@ -22,6 +22,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: npm install -g https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz
+    - run: pwd
     - run: cd Teszz/packages/myfirstapp/helloworld/
     - run: npm ci
     - run: npm run ci:deploy
