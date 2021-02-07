@@ -21,6 +21,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+    - run: cd Teszz
+    - run: npm install
+    - run: npm test
     - run: npm install -g https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz
     - run: nim auth login ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
     - run: nim project deploy .

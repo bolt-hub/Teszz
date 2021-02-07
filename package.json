@@ -1,0 +1,23 @@
+{
+  "name": "Teszz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolt-hub/Teszz.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bolt-hub/Teszz/issues"
+  },
+  "homepage": "https://github.com/bolt-hub/Teszz#readme",
+  "dependencies": {
+    "jest": "^26.6.3"
+  }
+}
