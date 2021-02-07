@@ -24,4 +24,6 @@ jobs:
     - run: npm install -g https://apigcp.nimbella.io/downloads/nim/nimbella-cli.tgz
     - run: nim auth login ${{ secrets.DEPLOYER_LOGIN_TOKEN }}
     - run: nim project deploy .
+    env:
+      NODE_ENV: ${{ secrets.NODE_ENV }}
 
